@@ -1,5 +1,6 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom'
+import Nav from '../components/Nav'
 
 const Private = () => {
   return (
@@ -8,7 +9,6 @@ const Private = () => {
       <hr />
       <Outlet/>
       <hr />
-      <p>foot</p>
     </div>
   )
 }
