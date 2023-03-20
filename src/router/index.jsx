@@ -5,7 +5,7 @@ import Loayaut from "../loayaut/Loayaut";
 import Private from "../loayaut/Private";
 import Dashboard from "../pages/Dashboard";
 
-const router = createBrowserRouter([
+export const router = createBrowserRouter([
     //main url
 {
 path: '/',
