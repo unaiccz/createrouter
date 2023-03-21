@@ -5,7 +5,6 @@ import Nav from '../components/Nav'
 const Private = () => {
   return (
     <div>
-      <h2>private</h2>
       <hr />
       <Outlet/>
       <hr />

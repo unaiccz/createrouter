@@ -6,11 +6,9 @@ const Loayaut = () => {
   return (
     <div>
    <Nav/>
-      <span>content</span>
-      <hr />
+   <br />
       <Outlet/>
-      <hr />
-      <p>foot</p>
+
     </div>
   )
 }

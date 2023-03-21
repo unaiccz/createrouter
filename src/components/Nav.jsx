@@ -1,12 +1,13 @@
 import React from 'react'
+import { useContext } from 'react'
 import { NavLink } from 'react-router-dom'
-import { UserContext, useusercontext } from '../context/UserContext'
+import { useuser } from '../context/UserContext'
 const Nav = () => {
-  const {user,setuser} = useusercontext;
-  console.log(user)
+const {user, setuser} = useuser()
+console.log(useuser())
   return (
     <div>
-      <nav className="navbar navbar-dark bg-dark justify-around">
+      <nav className="navbar navbar-dark bg-dark">
         <NavLink to="/" className="navbar-brand">Home</NavLink>
  
 
