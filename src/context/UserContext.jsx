@@ -1,9 +1,9 @@
 import { createContext } from "react";
 import React, { useState } from 'react';
 import { useContext } from 'react';
-export const UserContext = createContext(false);
+export const UserContext = createContext();
 const UserProvider = ({children}) => {
-const [user, setuser] = useState(false);
+const [user, setuser] = useState(true);
     return (
         <UserContext.Provider value={{user, setuser}}>
             {children}

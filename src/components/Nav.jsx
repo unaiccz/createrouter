@@ -11,7 +11,15 @@ console.log(useuser())
         <NavLink to="/" className="navbar-brand">Home</NavLink>
  
 
-    <NavLink to="/dashboard" className="navbar-brand">Dashboard</NavLink>
+{
+
+  user &&     (
+<>
+<NavLink onClick={()=> setuser(false)} className="navbar-brand">Log-Out</NavLink>
+  <NavLink to="/dashboard" className="navbar-brand">Dashboard</NavLink>
+</>
+  )
+}
 
       </nav>
     </div>
