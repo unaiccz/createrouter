@@ -6,8 +6,10 @@ import './index.css'
  import { RouterProvider } from 'react-router-dom'
  import  UserProvider  from './context/UserContext'
 ReactDOM.createRoot(document.getElementById('root')).render(
+    //strict mode
+    <React.StrictMode>
 <UserProvider>
 <RouterProvider  router={router}/>
 </UserProvider>
-
+    </React.StrictMode>
 )
