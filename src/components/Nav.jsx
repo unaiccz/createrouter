@@ -8,12 +8,10 @@ const Nav = () => {
     <div>
       <nav className="navbar navbar-dark bg-dark justify-around">
         <NavLink to="/" className="navbar-brand">Home</NavLink>
- {
+ 
 
-  user && (
     <NavLink to="/dashboard" className="navbar-brand">Dashboard</NavLink>
-  )
- }
+
       </nav>
     </div>
   )
