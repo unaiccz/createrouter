@@ -7,8 +7,8 @@ const Nav = () => {
 const {user, setuser} = useuser()
 const navigate = useNavigate()
 const Out = () => {
-  setuser(false);
   navigate('/')
+  setuser(false);
 }
   return (
     <div>
